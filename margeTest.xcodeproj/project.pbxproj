@@ -14,6 +14,7 @@
 		7BBC4D4E1FE21B3600D05F56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBC4D4C1FE21B3600D05F56 /* LaunchScreen.storyboard */; };
 		7BBC4D591FE21B3600D05F56 /* margeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC4D581FE21B3600D05F56 /* margeTestTests.swift */; };
 		7BBC4D641FE21B3600D05F56 /* margeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC4D631FE21B3600D05F56 /* margeTestUITests.swift */; };
+		AE5FEF9720070806004B4BE0 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5FEF9620070806004B4BE0 /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		7BBC4D5F1FE21B3600D05F56 /* margeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = margeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBC4D631FE21B3600D05F56 /* margeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = margeTestUITests.swift; sourceTree = "<group>"; };
 		7BBC4D651FE21B3600D05F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5FEF9420070806004B4BE0 /* margeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "margeTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE5FEF9520070806004B4BE0 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		AE5FEF9620070806004B4BE0 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,12 @@
 				7BBC4D431FE21B3600D05F56 /* AppDelegate.swift */,
 				7BBC4D451FE21B3600D05F56 /* ViewController.swift */,
 				7BBC4D471FE21B3600D05F56 /* Main.storyboard */,
+				AE5FEF9520070806004B4BE0 /* NextViewController.h */,
+				AE5FEF9620070806004B4BE0 /* NextViewController.m */,
 				7BBC4D4A1FE21B3600D05F56 /* Assets.xcassets */,
 				7BBC4D4C1FE21B3600D05F56 /* LaunchScreen.storyboard */,
 				7BBC4D4F1FE21B3600D05F56 /* Info.plist */,
+				AE5FEF9420070806004B4BE0 /* margeTest-Bridging-Header.h */,
 			);
 			path = margeTest;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				TargetAttributes = {
 					7BBC4D3F1FE21B3600D05F56 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					7BBC4D531FE21B3600D05F56 = {
@@ -260,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BBC4D461FE21B3600D05F56 /* ViewController.swift in Sources */,
+				AE5FEF9720070806004B4BE0 /* NextViewController.m in Sources */,
 				7BBC4D441FE21B3600D05F56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,11 +435,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = margeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.uryukyu.ie.e16530.margeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "margeTest/margeTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = margeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.uryukyu.ie.e16530.margeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "margeTest/margeTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
